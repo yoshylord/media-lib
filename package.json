@@ -1,0 +1,31 @@
+{
+  "name": "media-lib",
+  "version": "1.0.0",
+  "version-commit-sha": "unknown",
+  "description": "A small media library toolkit",
+  "author": "ACH",
+  "email": "antoine.chantalou@gmail.com",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": "4.x"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "repository": "axa-assistance/move-api",
+  "scripts": {
+    "lint:md": "bash tools/validate.md.sh",
+    "lint:js": "eslint . *.js --max-warnings 0",
+    "lint:security": "nsp check",
+    "lint": "npm run lint:md && npm run lint:js && npm run lint:security",
+    "test": "bash tools/test.sh",
+    "test:smoke-test-no-gateway": "mocha test/smoke-test-no-gateway",
+    "test:smoke-test-end-to-end": "mocha test/smoke-test-end-to-end",
+    "cucumber": "bash tools/cucumber.sh",
+    "start": "node server_production.js | bunyan",
+    "dev": "nodemon --ignore log server.js | bunyan -o short"
+  },
+  "main": "main.js"
+}
