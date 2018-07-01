@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "quotes": [2, "single"],
+        "semi": [2, "always"],
+        "default-case": 2
+    },
+    "env": {
+        "node": true,
+        "es6": true
+    }
+}

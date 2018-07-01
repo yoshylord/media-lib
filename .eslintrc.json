@@ -1,5 +1,16 @@
 {
     "extends": "google",
+    "env": {
+        "mocha": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
     "rules": {
         "require-jsdoc": [1,  {
             "require": {
